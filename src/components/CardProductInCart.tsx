@@ -44,7 +44,7 @@ export function CardProductInCart({
         R${price}
       </h3>
       <img
-        src="src\assets\Close_cart.svg"
+        src="../assets/Close_cart.svg"
         alt=""
         className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2"
         width="18px"

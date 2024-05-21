@@ -33,7 +33,7 @@ export function ContainerCart() {
         className="flex flex-row px-[27px] py-[17px] bg-white rounded-lg gap-[30px]"
         onClick={() => setIsOpen(true)}
       >
-        <img src="\src\assets\Vector.svg" alt="cart image" />
+        <img src="../assets/Vector.svg" alt="cart image" />
         <p id="countCart" className="text-black font-[700] text-[18px]">
           0
         </p>
@@ -52,13 +52,13 @@ export function ContainerCart() {
             Carrinho <br /> de compras
           </h3>
           <img
-            src="src\assets\Close_cart.svg"
+            src="../assets/Close_cart.svg"
             alt="close cart image"
             onClick={() => setIsOpen(false)}
           />
         </div>
         <CardProductInCart
-          photo="src\assets\iphone-x.png"
+          photo="../assets/iphone-x.png"
           name="Apple iPhoneX 128GB"
           price="399"
         />

@@ -17,7 +17,7 @@ export function CardProduct({ name, description, price, photo }: CardProps) {
       </p>
       <button className=" w-full bg-[#0F52BA] rounded-b-lg ">
         <div className="flex flex-row gap-[14px] justify-center py-[8px]">
-          <img src="\src\assets\shopping-bag.svg" alt="" />
+          <img src="../assets/shopping-bag.svg" alt="" />
           <h2 className="font-semibold text-[14px] leading-[18px] text-white">
             COMPRAR
           </h2>
