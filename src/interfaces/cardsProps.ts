@@ -3,5 +3,6 @@ export interface CardProps {
   name: string
   photo: string
   description: string
-  price: string
+  price: number
+  quantity?: number
 }

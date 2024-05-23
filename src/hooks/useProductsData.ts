@@ -20,8 +20,7 @@ const fecthData = async (): AxiosPromise<ProductData> => {
 export function useProductsData() {
   const query = useQuery({
     queryFn: fecthData,
-    queryKey: ['products-data'],
-    retry: 2
+    queryKey: ['products-data']
   })
   return {
     ...query,

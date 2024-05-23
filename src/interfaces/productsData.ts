@@ -5,7 +5,7 @@ export interface ProductData {
     brand: string
     description: string
     photo: string
-    price: string
+    price: number
   }[]
   count: number
 }
