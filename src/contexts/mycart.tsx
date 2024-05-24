@@ -22,7 +22,11 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       if (productIndex !== -1) {
         alert('O produto já está no carrinho.')
         const updateProducts = [...prevProducts]
-        updateProducts[productIndex].quantity += product.quantity
+        const existingProducts = updateProducts[productIndex]
+        updateProducts[productIndex] = {
+          ...existingProducts,
+          quantity: (existingProducts.quantity || 0) + (product.quantity || 0)
+        }
         return updateProducts
       }
       return [...prevProducts, { ...product, quantity: product.quantity }]

@@ -36,7 +36,7 @@ export function CardProductInCart({
         {name}
       </p>
       <div className="flex flex-row justify-between items-stretch h-full w-full">
-        <div className="flex items-center">
+        <div className="flex md:flex-col items-start">
           <p className="invisible md:visible text-[5px] font-normal">Qtd:</p>
           <div className="flex flex-row w-[90px] h-[34px]  md:w-[50px] border divide-x justify-around gap-[9px] rounded text-[20px] md:text-[10px] text-center px-[8px]">
             <button
@@ -46,7 +46,7 @@ export function CardProductInCart({
             >
               -
             </button>
-            <h2 className="flex-1">{quantity}</h2>
+            <h2 className="flex-1 md:content-center">{quantity}</h2>
             <button className="flex-1" onClick={anotherProduct}>
               +
             </button>
