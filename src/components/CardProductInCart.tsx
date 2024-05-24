@@ -61,7 +61,7 @@ export function CardProductInCart({
       </div>
       <button onClick={() => removeProduct(id)}>
         <img
-          src="src/assets/Close_cart.svg"
+          src="/Close_cart.svg"
           alt=""
           className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 w-[23px] md:w-[18px]"
         />

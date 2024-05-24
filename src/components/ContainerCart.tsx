@@ -25,7 +25,7 @@ export function ContainerCart() {
     open: {
       height: '100%',
       width: ['full', '80%'],
-      maxWidth: '600px',
+      maxWidth: '486px',
       opacity: 1,
       transition: {
         type: 'spring',
@@ -81,7 +81,7 @@ export function ContainerCart() {
         onClick={() => setIsOpen(true)}
       >
         <button className="flex flex-row gap-4 items-center">
-          <img src="src/assets/Vector.svg" alt="cart image" />
+          <img src="/Vector.svg" alt="cart image" />
           <p id="countCart" className="text-black font-[700] text-[18px]">
             {products.length}
           </p>
@@ -101,7 +101,7 @@ export function ContainerCart() {
             Carrinho <br /> de compras
           </h3>
           <button onClick={() => setIsOpen(false)}>
-            <img src="src/assets/Close_cart.svg" alt="close cart image" />
+            <img src="/Close_cart.svg" alt="close cart image" />
           </button>
         </div>
         <div className="flex flex-col gap-3">
