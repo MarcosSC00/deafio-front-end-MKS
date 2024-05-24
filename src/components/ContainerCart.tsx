@@ -75,7 +75,7 @@ export function ContainerCart() {
   })
 
   return (
-    <motion.nav className="relative z-10">
+    <motion.nav>
       <div
         className="flex flex-row px-[27px] py-[17px] bg-white rounded-lg gap-[30px]"
         onClick={() => setIsOpen(true)}
@@ -91,7 +91,7 @@ export function ContainerCart() {
         initial="closed"
         animate={isOpen ? 'open' : 'closed'}
         variants={variants}
-        className=" overflow-hidden bg-[#0F52BA] fixed right-0 top-0 pt-[36px] px-[40px] shadow-card-shadow"
+        className=" overflow-y-scroll box-border bg-[#0F52BA] fixed right-0 top-0 pt-[36px] px-[40px] shadow-card-shadow"
       >
         <div
           ref={contentRef}
@@ -104,7 +104,7 @@ export function ContainerCart() {
             <img src="/Close_cart.svg" alt="close cart image" />
           </button>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 relative">
           {products.map(product => (
             <CardProductInCart
               key={product.id}
@@ -118,18 +118,13 @@ export function ContainerCart() {
             />
           ))}
         </div>
-        <div className="absolute bottom-0 left-0 right-0">
-          <div>
-            <div className="flex flex-row justify-around text-[28px] font-bold leading[15px] pb-[42px]">
-              <h3>Total:</h3>
-              <p>R${totalPayment()}</p>
-            </div>
-
-            <button className="w-full text-[28px] font-bold pt-[39px] pb-[42px] bg-black">
-              Finalizar compra
-            </button>
-          </div>
+        <div className="flex flex-row justify-around text-[28px] font-bold leading[15px] pb-[42px]">
+          <h3>Total:</h3>
+          <p>R${totalPayment()}</p>
         </div>
+        <button className="absolute left-0 w-full text-[28px] font-bold pt-[39px] pb-[42px] bg-black">
+          Finalizar compra
+        </button>
       </motion.div>
     </motion.nav>
   )
